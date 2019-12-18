@@ -1,0 +1,29 @@
+/* pages/me/index.wxss */
+page{
+  background-color: #eee;
+}
+.form{margin: 10px;}
+.form-group{
+  display: flex;
+  flex-direction: row;
+  margin: 5px 5px;
+  height: 45px;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid gainsboro;
+
+}
+.label{
+  width: 20%;
+  margin-left: 10px;
+  color: gray;
+
+}
+.form-input{
+ width: 80%;
+ height: 100%;
+}
+.button{
+  margin: 5px;
+}
+

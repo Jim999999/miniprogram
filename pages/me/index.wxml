@@ -1,0 +1,17 @@
+<!--pages/me/index.wxml-->
+<view class="content">
+  <form class="form" bindsubmit="login">
+    <view class="form-group">
+      <view class="label">账号</view>
+      <input class="form-input" name="name" value="" type="number"></input>
+    </view>
+    <view class="form-group">
+        <view class="label">密码</view>
+        <input class="form-input" name="passwd" value=""  type="password"></input>
+    </view>
+    <button class="submit button" type="primary" form-type="submit">登录</button>
+    <button class="register button" type="warn" bindtap="toRegister">注册</button>
+    <button class="wx button" type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfos">微信登录</button>
+
+  </form>
+</view>

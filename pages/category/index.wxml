@@ -1,0 +1,21 @@
+<!--test/test.wxml-->
+<view class="cate">
+<view class="left">
+  <block wx:for="{{cates}}" wx:key="index">
+   <view  class="left-title {{index == isActive ? 'selected' : ''}}" bindtap="clickCate" data-id="{{index}}" >{{item.typeName}}</view>
+  </block>
+</view>
+<view class="right">
+    <block wx:for="{{newsGoods}}" wx:key="*this">
+      <navigator url="{{item.url}}" class="goods-item">
+        <image class="goods-img" mode="widthFix" src="{{item.img}}"></image>
+        <text class="goods-title">{{item.title}}</text>
+        <view class="num">
+          <text class="goods-price">￥{{item.price}}</text>
+          <!-- <text class="goods-buy-num">{{item.buyNums}}人付款</text> -->
+        </view>
+      </navigator>
+    </block>
+</view>
+</view>
+

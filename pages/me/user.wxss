@@ -1,0 +1,16 @@
+/* pages/me/user.wxss */
+
+.user{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  width: 70%；
+}
+.user-avar{
+  border-radius: 50%;
+  width: 100px;
+  align-self: center;
+}

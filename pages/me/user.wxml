@@ -1,0 +1,12 @@
+<!--pages/me/user.wxml-->
+<view class="user">
+  <block wx:if="{{phone}}">
+  <view>用户名: {{phone}}</view>
+  <button type="primary">登录成功</button>
+  </block>
+  <block wx:if="{{userInfo}}">
+    <view class="user-avar"><image class="user-avar" src="{{userInfo.avatarUrl}}" mode="widthFix"></image></view>
+    <view class="user-name">{{userInfo.nickName}} {{userInfo.gender}}</view>
+    <view class="user-province">{{userInfo.province}} {{userInfo.city}}</view>
+  </block>
+</view>
